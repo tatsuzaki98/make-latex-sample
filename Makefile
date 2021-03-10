@@ -10,10 +10,10 @@ report.dvi: report.tex graph.eps
 graph.eps: result.dat draw_line.gnuplot
 	gnuplot draw_line.gnuplot
 
-result.dat: a.out
+result.dat: a.out assets
 	./assets/a.out > assets/result.dat
 
-a.out: main.f90
+a.out: main.f90 assets
 	gfortran main.f90 -o assets/a.out
 
 assets:
