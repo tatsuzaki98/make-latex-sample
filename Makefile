@@ -1,6 +1,3 @@
-remove_aux_and_dvi: report.aux report.dvi
-	rm report.aux report.dvi
-
 open_pdf: report.pdf
 	open report.pdf
 
