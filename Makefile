@@ -19,3 +19,5 @@ result.dat: a.out
 a.out: main.f90
 	gfortran main.f90 -o assets/a.out
 
+assets:
+	mkdir -p assets
